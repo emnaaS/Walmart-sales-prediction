@@ -88,7 +88,7 @@ if __name__ == "__main__":
     # ── Load credentials ──────────────────────────────────────────────────────
     load_dotenv()
     dagshub.auth.add_app_token(os.getenv("DagsHub_token"))
-    dagshub.init("Walmart-sales-prediction", "emnaaS", mlflow=True)
+    dagshub.init("Walmart_sales", "emnaaS", mlflow=True)
 
     # ── Load & prepare data ───────────────────────────────────────────────────
     df = pd.read_csv('data/Walmart_Sales.csv')
