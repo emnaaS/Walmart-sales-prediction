@@ -43,3 +43,27 @@ def select_features(df, mi_scores, relevance_threshold=0.01):
     print("Remaining features:", X.shape[1])
 
     return X, y
+
+
+def select_features_v2(df, mi_scores, relevance_threshold=0.01):
+    # Drop redundant features based on MRMR analysis
+    redundant = ['Fuel_Price', 'week', 'year']
+
+    X = df.drop(columns=['Weekly_Sales', 'Date'] + redundant, errors='ignore')
+    y = df['Weekly_Sales']
+
+    print("Dropped features:", redundant)
+    print("Remaining features:", X.shape[1])
+
+    return X, y
+
+def add_holiday_interactions(df):
+    store_cols = [col for col in df.columns if col.startswith('Store_')]
+
+    for store in store_cols:
+        df[f'Holiday_{store}'] = df['Holiday_Flag'] * df[store]
+
+    print(f"Added {len(store_cols)} interaction features")
+    print(f"New shape: {df.shape}")
+
+    return df

@@ -1,0 +1,34 @@
+name: Walmart Sales MLOps Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.13'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Run tests
+        run: |
+          pytest test_pipeline.py -v
+
+      - name: Train & log model
+        env:
+          DagsHub_username: ${{ secrets.emnaaS }}
+          DagsHub_token: ${{ secrets.ac026871943a805c04cfaa7af4cf1a0734c83779 }}
+        run: |
+          python modeling.py
