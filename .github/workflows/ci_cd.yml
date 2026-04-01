@@ -28,7 +28,7 @@ jobs:
 
       - name: Train & log model
         env:
-          DagsHub_username: ${{ secrets.emnaaS }}
-          DagsHub_token: ${{ secrets.ac026871943a805c04cfaa7af4cf1a0734c83779 }}
+          DagsHub_username: ${{ secrets.DAGSHUB_USERNAME }}
+          DagsHub_token: ${{ secrets.DAGSHUB_TOKEN }}
         run: |
           python modeling.py
