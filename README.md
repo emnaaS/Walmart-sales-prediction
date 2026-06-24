@@ -42,3 +42,5 @@ The project uses **GitHub Actions** to automate testing on every push. The workf
 ```
  pip install -r requirements.txt
 ```
+
+Key dependencies: *pandas*, *scikit-learn*, *mlflow*, *dagshub*, *seaborn*, *matplotlib*, *python-dotenv*
