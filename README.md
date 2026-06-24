@@ -44,3 +44,11 @@ The project uses **GitHub Actions** to automate testing on every push. The workf
 ```
 
 Key dependencies: *pandas*, *scikit-learn*, *mlflow*, *dagshub*, *seaborn*, *matplotlib*, *python-dotenv*
+
+## Environment Variables
+Create a .env file at the project root:
+```
+DagsHub_username=your_username
+DagsHub_token=your_token
+```
+
