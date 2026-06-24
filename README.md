@@ -19,3 +19,21 @@ The dataset contains weekly sales data for 45 stores, along with macroeconomic f
 | Feature | Description |
 | --------- | ----------|
 | Store | Store number (1–45) |
+| Date | Week of sales |
+| Weekly sales | Sales for the given store/week (target) |
+| Holoday flag | Whether the week includes a public holiday |
+| Temperature | Average regional temperature |
+| Fuel_price | Cost of fuel in the region |
+| CPI | Consumer Price Index |
+| Unemployement | Regional unemployment rate |
+
+## Experiment tracking
+All experiments are logged and stored on DagsHub using MLflow:
+- Logged parameters: n_estimators, train/test shapes
+- Logged metrics: R², MSE, RMSE, MAE
+- Logged artifacts: trained model
+
+Dagshub repository: [emnaaS/Walmart_sales](https://dagshub.com/emnaaS/Walmart_sales)
+
+## CI/CD pipeline
+The project uses *GitHub Actions* to automate testing on every push. The workflow runs the *pytest* test suite (*test_pipeline.py*) to validate the pipeline steps before any changes are merged.
