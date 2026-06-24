@@ -1,4 +1,4 @@
-#Walmart Weekly Sales Prediction
+# Walmart Weekly Sales Prediction
 A machine learning project to predict Walmart weekly sales, built following MLOps best practices; from data exploration to model training, experiment tracking, automated testing, and CI/CD deployment.
 ##Project overview
 This project predicts weekly sales for 45 Walmart stores using historical data from Kaggle. It covers the full ML pipeline:
