@@ -3,9 +3,14 @@ A machine learning project to predict Walmart weekly sales, built following MLOp
 ## Project overview
 This project predicts weekly sales for 45 Walmart stores using historical data from Kaggle. It covers the full ML pipeline:
 - Exploratory Data Analysis (EDA)
-- Feature engineering (date decomposition, store encoding, holiday interaction features)
+- Feature engineering (date decomposition, store encoding)
 - Feature selection using MRMR (Mutual Information + Redundancy)
 - Model comparison and selection
 - Experiment tracking with MLflow via DagsHub
 - Automated testing with pytest
 - CI/CD pipeline via GitHub Actions
+
+PS: No user-facing interface; the project is a backend ML pipeline designed to be run and reproduced end-to-end.
+
+## Dataset
+[Walmart sales] (https://www.kaggle.com/datasets/mikhail1681/walmart-sales/data) 
