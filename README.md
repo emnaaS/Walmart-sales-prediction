@@ -39,8 +39,6 @@ Dagshub repository: [emnaaS/Walmart_sales](https://dagshub.com/emnaaS/Walmart_sa
 The project uses **GitHub Actions** to automate testing on every push. The workflow runs the **pytest** test suite (**test_pipeline.py**) to validate the pipeline steps before any changes are merged.
 
 ## Setup & Usage
-	```
-{
-  pip install -r requirements.txt
-}
+```
+ pip install -r requirements.txt
 ```
