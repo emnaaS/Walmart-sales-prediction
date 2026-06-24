@@ -13,4 +13,9 @@ This project predicts weekly sales for 45 Walmart stores using historical data f
 PS: No user-facing interface; the project is a backend ML pipeline designed to be run and reproduced end-to-end.
 
 ## Dataset
-[Walmart sales](https://www.kaggle.com/datasets/mikhail1681/walmart-sales/data) 
+Source: [Walmart sales](https://www.kaggle.com/datasets/mikhail1681/walmart-sales/data) 
+The dataset contains weekly sales data for 45 stores, along with macroeconomic features:
+
+| Feature | Description |
+| --------- | ----------|
+| Store | Store number (1–45) |
