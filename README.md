@@ -55,3 +55,7 @@ DagsHub_token=your_token
 ## Results
 The final Random Forest model explains over 92% of the variance in weekly sales (R² > 0.92), with the best MAE among all models tested. Sales spikes around the Christmas/New Year holiday period are clearly captured, confirming that seasonality and store identity are the dominant predictors.
 A focused evaluation on November–December weeks yields R² = 0.75, reflecting the higher difficulty of predicting holiday-period spikes.
+
+## Contact
+
+If you have any questions or feedback, feel free to reach out to me at emnaa.sellami@gmail.com
