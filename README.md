@@ -36,4 +36,4 @@ All experiments are logged and stored on DagsHub using MLflow:
 Dagshub repository: [emnaaS/Walmart_sales](https://dagshub.com/emnaaS/Walmart_sales)
 
 ## CI/CD pipeline
-The project uses *GitHub Actions* to automate testing on every push. The workflow runs the *pytest* test suite (*test_pipeline.py*) to validate the pipeline steps before any changes are merged.
+The project uses **GitHub Actions** to automate testing on every push. The workflow runs the **pytest** test suite (**test_pipeline.py**) to validate the pipeline steps before any changes are merged.
