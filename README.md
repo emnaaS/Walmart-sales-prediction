@@ -13,7 +13,7 @@ This project predicts weekly sales for 45 Walmart stores using historical data f
 PS: No user-facing interface; the project is a backend ML pipeline designed to be run and reproduced end-to-end.
 
 ## Dataset
-Source: [Walmart sales](https://www.kaggle.com/datasets/mikhail1681/walmart-sales/data) 
+Source: [Walmart sales](https://www.kaggle.com/datasets/mikhail1681/walmart-sales/data).
 
 The dataset contains weekly sales data for 45 stores, along with macroeconomic features:
 
@@ -52,4 +52,6 @@ Create a .env file at the project root:
 DagsHub_username=your_username
 DagsHub_token=your_token
 ```
-
+## Results
+The final Random Forest model explains over 92% of the variance in weekly sales (R² > 0.92), with the best MAE among all models tested. Sales spikes around the Christmas/New Year holiday period are clearly captured, confirming that seasonality and store identity are the dominant predictors.
+A focused evaluation on November–December weeks yields R² = 0.75, reflecting the higher difficulty of predicting holiday-period spikes.
